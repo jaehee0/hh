@@ -1,0 +1,133 @@
+<!DOCTYPE html><!-- 21861099 이재희 -->
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+    <script>
+    $(document).ready(function(){
+
+
+   $(window).scroll(function () {
+
+     var position = $(window).scrollTop();
+     if (position > 100) {  // 탑버튼 보여줄 스크롤 위치지정
+         $('#back-top').slideDown("slow");
+    } else {
+         $('#back-top').slideUp("slow");
+    }
+
+   });
+
+
+     $('#back-top').click(function () {
+         $('body,html').animate({scrollTop: 0}, 200);   // 클릭시 스크롤 탑으로 이동
+     });
+
+   });
+    </script>
+    <style media="screen">
+      * {
+        padding: 0;
+        margin: 0;
+      }
+      body {
+        font-family: '돋음';
+        font-size: 14px;
+        color: #444444;
+      }
+      li {
+        list-style-type: none;
+      }
+
+      .clear {
+        clear: both;
+      }
+      header {
+        width: 100%;
+        height: 100%;
+        margin: 0 auto;
+        /* border: solid 1px red; */
+      }
+
+      #menus {
+        float: right;
+        /* border: solid 1px red;*/
+      }
+      #top_menu {
+        text-align: right;
+        margin-top: 50px;
+        margin-right: 60px;
+        /* border: solid 1px red; */
+      }
+      #main_menu {
+        margin-top: 40px;
+        font-family: '맑은 고딕';
+        font-size: 14px;
+        color: black;
+        margin-bottom: 50px;
+        /* border: solid 1px red; */
+      }
+      #main_menu li {
+        display: inline;
+        margin-left: 60px;
+      }
+      #main_menu a{
+        text-decoration: none;
+        color: #999999;
+      }
+      #back-top {
+      position: fixed; bottom: 0px; right: 0px; height:50px;
+
+      cursor:pointer; display:none; z-index:3;
+      }
+
+
+
+
+
+
+    </style>
+
+  </head>
+  <body>
+
+    <header>
+
+
+        <nav id='menu'>
+          <div id='top_menu'>
+
+          </div>
+
+          <ul id='main_menu'>
+            <li><a href="index.html">서체이야기</a></li>
+            <li><a style='color: #c1c1c1'> | </li>
+            <li><a href="h1.html">윤고딕 705</a></li>
+            <li><a href="h2.html">사이사이</a></li>
+            <li><a href="h3.html" style='color: #fbb3c3'>크기와 무게</a></li>
+            <li><a style='color: #c1c1c1'> | </li>
+            <li><a href="a1.html">BENTON 이야기</a></li>
+            <li><a href="a2.html">사이사이</a></li>
+            <li><a href="a3.html">크기와 무게</a></li>
+            </ul>
+            </nav>
+            </header>
+
+
+
+            <div id="back-top">
+            <b><img src="1.png" width='50%'/></b>
+            </div>
+
+            <img src="han3.jpg" width='100%'/>
+
+
+
+
+            <div class='clear'></div><!--float 속성 해제 -->
+
+
+
+  </body>
+</html>
